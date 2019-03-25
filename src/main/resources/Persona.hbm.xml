@@ -1,0 +1,14 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+        "http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+<hibernate-mapping>
+	<class name="it.html.hibernate.bean.Persona"
+		table="AnagraficaCliente">
+		<id name="id" column="ANAG_ID">
+			<generator class="native" />
+		</id>
+		<property name="email" column="CLI_EMAIL" />
+		<property name="nome" />
+	</class>
+</hibernate-mapping>
